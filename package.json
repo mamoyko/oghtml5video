@@ -1,0 +1,19 @@
+{
+  "name": "html5newserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsmpeg": "^1.0.0",
+    "node-schedule": "^1.2.5",
+    "socket.io": "^2.0.4"
+  }
+}

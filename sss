@@ -1,0 +1,13 @@
+ffmpeg -i rtmp://hstvideohk.wste3214.com/live/Ggame1table1 -f mpegts http://127.0.0.1:5001/index.mpeg
+
+ffmpeg -i "rtmp://hstvideohk.wste3214.com/live/Ggame1table1" -f image2 -vcodec mjpeg -b:v 500k -r 21 -q:v 10 -s 640x480 http://127.0.0.1:5001/password/temp123/640/480/image-%3d.jpg
+
+
+ffmpeg -i rtmp://hstvideohk.wste3214.com/live/Ggame1table1 -f mpegts -b 800k -r 30 http://127.0.0.1:5001/password/index.mpeg
+
+
+ffmpeg -i rtmp://hstvideohk.wste3214.com/live/Ggame1table1 -f mpegts -codec:v mpeg1video -s 600x480 -codec:a mp2 -b 0 http://127.0.0.1:5001/password/index.ts
+
+
+
+ffmpeg -i rtmp://hstvideohk.wste3214.com/live/Ggame1table1 -f mpegts -codec:v mpeg1video -s 960x540 -b:v 512k -r 30 -bf 0 -codec:a mp2 -ar 44100 -ac 1 -b:a 256k http://127.0.0.1:5001/password/index.ts
